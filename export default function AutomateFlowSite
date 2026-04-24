@@ -1,0 +1,144 @@
+export default function AutomateFlowSite() {
+  return (
+    <div className="min-h-screen bg-neutral-950 text-white">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-fuchsia-500/10 to-emerald-500/20" />
+        <div className="absolute -top-24 right-0 h-96 w-96 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-fuchsia-400/20 blur-3xl" />
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+          <div className="grid items-center gap-14 lg:grid-cols-2">
+            <div>
+              <div className="mb-6 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80 backdrop-blur">
+                Snazzy brand concept for your AI automation business
+              </div>
+              <h1 className="max-w-2xl text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
+                Fluxora
+              </h1>
+              <p className="mt-4 max-w-xl text-xl text-cyan-300">
+                Intelligent systems that run your business while you move.
+              </p>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
+                Fluxora helps real estate firms, clinics, recruiters, and service businesses automate lead capture, WhatsApp follow-up, CRM workflows, and customer support so they can scale without adding more admin staff.
+              </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <button className="rounded-2xl bg-white px-6 py-3 text-sm font-medium text-neutral-950 shadow-2xl transition hover:scale-[1.02]">
+                  Book a Demo
+                </button>
+                <button className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10">
+                  See Automations
+                </button>
+              </div>
+
+              <div className="mt-12 grid max-w-xl grid-cols-3 gap-4 text-sm text-white/70">
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+                  <div className="text-2xl font-semibold text-white">24/7</div>
+                  <div className="mt-1">Lead response</div>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+                  <div className="text-2xl font-semibold text-white">3x</div>
+                  <div className="mt-1">Faster follow-up</div>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+                  <div className="text-2xl font-semibold text-white">Lean</div>
+                  <div className="mt-1">No big team needed</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur-xl">
+                <div className="rounded-[1.5rem] border border-white/10 bg-neutral-900/90 p-5">
+                  <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                    <div>
+                      <div className="text-sm text-white/50">Live workflow</div>
+                      <div className="text-lg font-medium">New Lead Automation</div>
+                    </div>
+                    <div className="rounded-full bg-emerald-400/15 px-3 py-1 text-sm text-emerald-300">
+                      Active
+                    </div>
+                  </div>
+
+                  <div className="mt-5 space-y-4">
+                    {[
+                      ['Website form submitted', 'Trigger'],
+                      ['WhatsApp welcome message sent', 'Action'],
+                      ['Lead scored and tagged in CRM', 'Action'],
+                      ['Viewing call booked automatically', 'Result'],
+                    ].map(([title, tag]) => (
+                      <div key={title} className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                        <div>
+                          <div className="text-sm text-white/45">{tag}</div>
+                          <div className="text-sm font-medium text-white">{title}</div>
+                        </div>
+                        <div className="h-3 w-3 rounded-full bg-cyan-300" />
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-5 grid grid-cols-2 gap-4">
+                    <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-400/10 to-cyan-400/5 p-4">
+                      <div className="text-sm text-white/50">Conversion uplift</div>
+                      <div className="mt-2 text-3xl font-semibold text-white">+38%</div>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-fuchsia-400/10 to-fuchsia-400/5 p-4">
+                      <div className="text-sm text-white/50">Admin time saved</div>
+                      <div className="mt-2 text-3xl font-semibold text-white">12 hrs/wk</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="grid gap-6 md:grid-cols-3">
+          {[
+            {
+              title: 'WhatsApp Lead Systems',
+              text: 'Instantly respond to enquiries, qualify prospects, and push hot leads straight into your sales pipeline.',
+            },
+            {
+              title: 'CRM Automation',
+              text: 'Automate reminders, follow-ups, task assignment, and lead nurturing without extra admin overhead.',
+            },
+            {
+              title: 'AI Support Flows',
+              text: 'Deploy chat assistants that answer questions, capture intent, and book appointments around the clock.',
+            },
+          ].map((item) => (
+            <div key={item.title} className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur">
+              <h3 className="text-2xl font-semibold">{item.title}</h3>
+              <p className="mt-4 leading-7 text-white/70">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
+        <div className="rounded-[2.5rem] border border-white/10 bg-gradient-to-r from-white/8 to-white/5 p-10 shadow-2xl backdrop-blur">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div>
+              <div className="text-sm uppercase tracking-[0.25em] text-cyan-300">Why Fluxora</div>
+              <h2 className="mt-4 text-4xl font-semibold">Built for founders who want growth without operational drag.</h2>
+              <p className="mt-5 max-w-2xl text-white/75 leading-8">
+                The brand is positioned as premium, modern, and mobile-first. It gives the feeling of speed, intelligence, and clean execution—ideal if you want to sell automation into the Gulf market while keeping the business lean and easy to run from anywhere.
+              </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {['Lean operating model', 'Premium B2B look', 'Easy to pitch in Gulf markets', 'Flexible for real estate, clinics, and recruiters'].map((point) => (
+                <div key={point} className="rounded-2xl border border-white/10 bg-neutral-900/70 p-5 text-white/80">
+                  {point}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
